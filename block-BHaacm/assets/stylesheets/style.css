@@ -1,0 +1,175 @@
+/*---[Resets Import]---*/
+
+@import url(../stylesheets/resets.css);
+
+/*---[Custom Styles]---*/
+
+/*Variables*/
+:root {
+  --primary: #222946;
+  --secondary: #5db768;
+  --tertiory: #e9ecfc;
+  --darktext: #020511;
+  --lighttext: #bbbfd1;
+}
+
+/*Global*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 3.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--lighttext);
+}
+
+/*Flex*/
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.flex-32 {
+  flex: 0 1 32%;
+}
+
+.flex-47 {
+  flex: 0 1 47%;
+}
+
+/*Buttons*/
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--secondary);
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+}
+
+/*Images*/
+
+.font-0 {
+  font-size: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+p {
+  color: rgb(102, 102, 102);
+  font-family: "Roboto", sans-serif;
+}
+
+/*Headings*/
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-family: "Roboto Slab", serif;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: "Roboto Slab", serif;
+}
+
+/*Header*/
+.header {
+  padding: 1rem 0;
+  background-color: var(--primary);
+}
+
+.header-nav a {
+  text-transform: uppercase;
+  margin-left: 2rem;
+}
+
+.header-nav .active {
+  color: var(--secondary);
+}
+
+/*Main*/
+/*Hero Section*/
+.hero {
+  background-color: var(--tertiory);
+}
+
+/*Footer*/
+.footer {
+  padding: 2rem 0;
+  background-color: var(--primary);
+  color: var(--lighttext);
+}
+
+.footer-nav a {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+/*Media Query For 768px Devices*/
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  .flex-center {
+    justify-content: center;
+  }
+
+  .flex-47,
+  .flex-32,
+  .flex-100 {
+    flex: 0 1 100%;
+    margin-bottom: 2rem;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .flex-rev {
+    flex-wrap: wrap-reverse;
+  }
+
+  .header-nav a,
+  .footer-nav a {
+    margin: 1rem 1rem;
+  }
+}
