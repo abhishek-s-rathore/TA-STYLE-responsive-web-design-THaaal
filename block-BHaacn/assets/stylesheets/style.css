@@ -240,6 +240,7 @@ time {
 }
 
 /*Schedule*/
+
 .schedule h1 {
   color: var(--darktext);
   text-align: center;
@@ -247,15 +248,50 @@ time {
 }
 
 .circle {
-  width: 8rem;
-  height: 8rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   border: 2px dashed var(--secondary);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-circle {
+  background-color: var(--secondary);
+}
+
+.active-circle h2 {
+  color: #fff;
+}
+
+.schedule .flex-60 {
+  padding-left: 4rem;
+}
+
+.schedule .flex {
+  margin: 2rem auto;
+}
+
+.schedule img {
+  border-radius: 0.5rem;
 }
 
 .button {
   text-align: center;
   margin: 2rem;
+}
+
+.vert-line {
+  height: 600px;
+  width: 0;
+  border-left: 2px dashed var(--secondary);
+  position: relative;
+  left: 4.7rem;
+
+  z-index: -1;
 }
 
 /*Event*/
@@ -318,12 +354,25 @@ iframe {
 }
 
 /*Footer*/
+
+.footer h3 {
+  color: #fff;
+}
 .footer a {
   color: var(--lighttext);
 }
 
 .footer-top {
   background-color: var(--base);
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-start a {
+  margin-right: 2rem;
 }
 
 small {
