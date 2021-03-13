@@ -1,0 +1,336 @@
+/*---[Resets Import]---*/
+
+@import url(../stylesheets/resets.css);
+
+/*---[Custom Styles]---*/
+
+/*Variables*/
+:root {
+  --primary: rgb(35, 52, 123);
+  --secondary: #ed494b;
+  --tertiory: #dfecfe;
+  --base: #142969;
+  --darktext: #01122d;
+  --lighttext: #6a6970;
+}
+
+/*Global*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 4rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Flex*/
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-32 {
+  flex: 0 1 32%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-47 {
+  flex: 0 1 47%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+/*Buttons*/
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  outline: none;
+  border: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ed494b;
+  border-radius: 5px;
+}
+
+/*Images*/
+
+.font-0 {
+  font-size: 0;
+}
+
+.full-width {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*Position*/
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.fix {
+  position: fixed;
+}
+
+/*Headings*/
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--darktext);
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--darktext);
+  margin: 1rem 0;
+}
+
+/*Header*/
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.header .container {
+  margin-top: 1rem;
+}
+
+.header-nav a {
+  margin-left: 2rem;
+  text-transform: uppercase;
+}
+
+/*Main*/
+/*Hero Section*/
+.hero {
+  padding-top: 8rem;
+  background: linear-gradient(rgba(35, 52, 123, 0.8), rgba(35, 52, 123, 0.8)),
+    url(../media/banner.png);
+  background-size: 100% 100%;
+}
+
+time {
+  color: var(--secondary);
+}
+
+.hero p {
+  color: #fff;
+  margin: 1.5rem 0;
+}
+
+/*About Section*/
+.about h1 {
+  text-transform: uppercase;
+  color: var(--darktext);
+}
+
+.about p {
+  margin: 1rem 0;
+  color: var(--lighttext);
+}
+
+/*Features Section*/
+
+.features h1 {
+  color: var(--darktext);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.features {
+  background-color: var(--tertiory);
+}
+
+.feature {
+  border: 2px dashed var(--secondary);
+  padding: 1rem;
+  position: relative;
+}
+
+.pop {
+  padding: 0 1rem;
+  position: absolute;
+  left: 2rem;
+  top: -1.5rem;
+}
+
+.pop-no {
+  color: var(--secondary);
+  background-color: var(--tertiory);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*Schedule*/
+.schedule h1 {
+  color: var(--darktext);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.circle {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 2px dashed var(--secondary);
+}
+
+.button {
+  text-align: center;
+  margin: 2rem;
+}
+
+/*Event*/
+.events {
+  background-color: var(--tertiory);
+}
+
+.members {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--darktext);
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.member-info {
+  font-weight: bold;
+  color: var(--darktext);
+}
+
+.active-event {
+  background-color: var(--secondary);
+  border-radius: 6px;
+  padding: 2rem 0;
+}
+
+.active-event .members,
+.active-event .member-info {
+  color: white;
+}
+
+/*Video Section*/
+iframe {
+  border-radius: 1rem;
+}
+
+/*News Section*/
+
+.news {
+  background-color: var(--tertiory);
+}
+
+.news h1 {
+  color: var(--darktext);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.news p {
+  color: var(--lighttext);
+}
+
+.news a {
+  color: var(--darktext);
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.news .active-link {
+  color: var(--secondary);
+}
+
+/*Footer*/
+.footer a {
+  color: var(--lighttext);
+}
+
+.footer-top {
+  background-color: var(--base);
+}
+
+small {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--lighttext);
+  background-color: var(--darktext);
+}
