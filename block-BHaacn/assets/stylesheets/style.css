@@ -47,17 +47,18 @@ a {
   color: #fff;
 }
 
+#toggle {
+  display: none;
+}
+
+.bars {
+  display: none;
+}
+
 /*Flex*/
 
 .flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flex-vertical {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -178,6 +179,11 @@ h3 {
   text-transform: uppercase;
 }
 
+.brand,
+.bars {
+  position: relative;
+}
+
 /*Main*/
 /*Hero Section*/
 .hero {
@@ -289,8 +295,7 @@ time {
   width: 0;
   border-left: 2px dashed var(--secondary);
   position: relative;
-  left: 4.7rem;
-
+  left: 5rem;
   z-index: -1;
 }
 
@@ -382,4 +387,117 @@ small {
   text-align: center;
   color: var(--lighttext);
   background-color: var(--darktext);
+}
+
+/*Media Query*/
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .flex-rev {
+    flex-wrap: wrap-reverse;
+  }
+
+  .flex-20,
+  .flex-30,
+  .flex-25,
+  .flex-32,
+  .flex-40,
+  .flex-47,
+  .flex-50,
+  .flex-60 {
+    flex: 0 1 100%;
+    text-align: center;
+
+    margin-bottom: 3rem;
+  }
+
+  .sm-column {
+    flex-direction: column;
+  }
+
+  .circle {
+    margin: 0 auto;
+  }
+
+  .vert-line {
+    display: none;
+  }
+
+  .schedule .flex {
+    align-items: center;
+  }
+
+  .flex-start {
+    justify-content: center;
+  }
+
+  .flex-start a {
+    margin: 0 1rem;
+  }
+
+  .flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .schedule .flex {
+    padding-left: 0;
+  }
+
+  iframe {
+    height: 24rem;
+  }
+
+  /*Nav-Bar*/
+
+  .header-nav {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(35, 52, 123, 0.9);
+    padding-top: 15rem;
+    z-index: 99;
+  }
+
+  .brand,
+  .bars {
+    position: fixed;
+    top: 1.5rem;
+    z-index: 100;
+  }
+
+  .brand {
+    left: 1.5rem;
+  }
+
+  .bars {
+    right: 1.5rem;
+  }
+
+  .header-nav .sm-column li {
+    margin: 3rem 0;
+    font-size: 2rem;
+  }
+
+  #toggle:checked ~ .header-nav {
+    display: inline-block;
+  }
+
+  .bars {
+    display: inline-block;
+    color: #fff;
+    font-size: 2rem;
+  }
 }
