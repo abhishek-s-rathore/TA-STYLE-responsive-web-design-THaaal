@@ -23,8 +23,11 @@
     <header class="header">
       <div class="container flex">
         <a class="brand" href="#">Alt Event</a>
+
+        <label class="bars" for="toggle"><i class="fas fa-bars"></i></label>
+        <input id="toggle" type="checkbox" />
         <nav class="header-nav">
-          <ul class="flex">
+          <ul class="flex sm-column">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -37,7 +40,7 @@
     <!--Main-->
     <!--Hero Section-->
     <section class="hero padding">
-      <div class="container flex">
+      <div class="container flex flex-rev">
         <article class="flex-50">
           <h1>
             Web Developer<br />
@@ -52,7 +55,11 @@
           <a class="btn btn-primary" href="#">Register Now</a>
         </article>
         <div class="flex-30">
-          <img src="assets/media/hero.png" alt="Girl singing" />
+          <img
+            class="full-width"
+            src="assets/media/hero.png"
+            alt="Girl singing"
+          />
         </div>
       </div>
     </section>
@@ -60,7 +67,7 @@
     <section class="about padding">
       <div class="container flex">
         <div class="flex-40">
-          <img src="assets/media/about.png" alt="Meeting" />
+          <img class="full-width" src="assets/media/about.png" alt="Meeting" />
         </div>
         <article class="flex-50">
           <h1>About the event</h1>
@@ -153,7 +160,7 @@
           <div class="flex">
             <div class="flex-20">
               <div class="circle">
-                <h2>06</h2>
+                <h2>07</h2>
                 <h2>Sept</h2>
               </div>
             </div>
@@ -177,7 +184,7 @@
           <div class="flex">
             <div class="flex-20">
               <div class="circle">
-                <h2>06</h2>
+                <h2>08</h2>
                 <h2>Sept</h2>
               </div>
             </div>
@@ -201,7 +208,7 @@
           <div class="flex">
             <div class="flex-20">
               <div class="circle">
-                <h2>06</h2>
+                <h2>09</h2>
                 <h2>Sept</h2>
               </div>
             </div>
@@ -318,7 +325,7 @@
 
           <nav class="flex-40">
             <h3>Quick Links</h3>
-            <ul class="flex">
+            <ul class="flex flex-vertical">
               <li><a href="#">Program</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Contact Us</a></li>
